@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Baca artikel demonstrasi tentang pariwisata, budaya, lingkungan, dan potensi lokal Balantak Utara.">
+    <title>Berita & Cerita — Balantak Utara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="navbar">
+    <a href="index.html" class="logo"><span class="logo-icon">◈</span><span>Balantak <strong>Utara</strong><small>SULAWESI TENGAH</small></span></a>
+    <button class="menu-toggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+    <nav class="nav-menu"><a href="index.html">Beranda</a><a href="paket-wisata.html">Paket Wisata</a><a href="kekayaan-alam.html">Kekayaan Alam</a><a href="berita.html" class="active">Berita</a><a href="tentang.html">Tentang</a></nav>
+    <div class="nav-actions"><button class="search-toggle" aria-label="Buka pencarian">⌕</button><a href="paket-wisata.html#daftar-paket" class="btn btn-primary nav-booking">Booking</a></div>
+    <form class="search-form" role="search"><input type="search" placeholder="Cari destinasi, berita, atau paket..." aria-label="Kata kunci pencarian"><button type="submit">Cari</button></form>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section class="hero sub-hero news-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="eyebrow light">STORIES · CULTURE · NATURE</span>
+            <h1>Cerita dan Kabar<br>Balantak Utara<span>.</span></h1>
+            <p>Ruang untuk mengenal potensi pariwisata, cerita budaya, kehidupan masyarakat, dan kepedulian terhadap lingkungan.</p>
+            <a href="#berita-terbaru" class="btn btn-primary">Jelajahi Artikel <span>↓</span></a>
+        </div>
+        <span class="hero-caption">EVERY PLACE HAS A STORY</span>
+    </section>
+
+    <!-- BERITA UTAMA -->
+    <section class="section-padding">
+        <div class="section-heading">
+            <div><span class="eyebrow">EDITOR'S PICK</span><h2>Cerita Pilihan.</h2></div>
+            <span class="demo-label">KONTEN DEMONSTRASI</span>
+        </div>
+        <article class="featured-article" id="berita-utama">
+            <a class="featured-article-image" href="#berita-1"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1400&q=90" alt="Panorama ombak dan pesisir tropis"></a>
+            <div class="featured-article-body">
+                <div class="news-meta"><span>PARIWISATA</span><time datetime="2026-10-01">1 Oktober 2026</time></div>
+                <h2>Mengenal Potensi Wisata Pesisir Balantak Utara</h2>
+                <p>Wilayah pesisir memiliki peluang untuk menjadi ruang belajar, rekreasi, dan pengembangan ekonomi lokal. Pengelolaan yang baik perlu mempertimbangkan aksesibilitas, keselamatan pengunjung, kesiapan masyarakat, serta perlindungan ekosistem.</p>
+                <p>Artikel ini merupakan pengantar mengenai prinsip pengembangan wisata yang bertanggung jawab, bukan laporan tentang proyek atau peristiwa tertentu yang telah terjadi.</p>
+                <a href="#berita-1" class="btn btn-primary">Baca Selengkapnya <span>→</span></a>
+            </div>
+        </article>
+    </section>
+
+    <!-- FILTER BERITA -->
+    <section class="section-padding section-cream" id="berita-terbaru">
+        <div class="section-heading">
+            <div><span class="eyebrow">LATEST STORIES</span><h2>Jelajahi Artikel.</h2><p>Artikel demonstrasi seputar wisata, budaya, lingkungan, dan potensi lokal.</p></div>
+        </div>
+        <div class="filter-buttons news-filters">
+            <button class="filter-btn active" data-news-filter="all" aria-pressed="true">Semua</button>
+            <button class="filter-btn" data-news-filter="pariwisata" aria-pressed="false">Pariwisata</button>
+            <button class="filter-btn" data-news-filter="budaya" aria-pressed="false">Budaya</button>
+            <button class="filter-btn" data-news-filter="lingkungan" aria-pressed="false">Lingkungan</button>
+            <button class="filter-btn" data-news-filter="lokal" aria-pressed="false">Potensi Lokal</button>
+        </div>
+
+        <div class="news-grid news-grid-large">
+            <article class="news-card article-card" id="berita-1" data-news-category="pariwisata">
+                <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=800&q=85" alt="Pemandangan pantai dan pulau tropis">
+                <div class="news-body">
+                    <div class="news-meta"><span>PARIWISATA</span><time datetime="2026-10-01">1 Okt 2026</time></div>
+                    <h3>Menjelajahi Potensi Pulau dan Pesisir</h3>
+                    <p>Bagaimana panorama alam dapat menjadi inspirasi perjalanan sekaligus peluang ekonomi bagi masyarakat setempat.</p>
+                    <button class="text-link article-read" data-title="Menjelajahi Potensi Pulau dan Pesisir" data-category="Pariwisata" data-date="1 Oktober 2026" data-image="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=85" data-content="Wisata pesisir dapat dikembangkan melalui perencanaan yang memperhatikan akses, keselamatan, pengelolaan sampah, dan daya dukung lingkungan. Kolaborasi dengan masyarakat lokal penting agar manfaat ekonomi dapat dibagikan secara adil. Artikel ini merupakan konten demonstrasi, bukan laporan kegiatan aktual.">Baca Selengkapnya →</button>
+                </div>
+            </article>
+
+            <article class="news-card article-card" id="berita-2" data-news-category="lingkungan">
+                <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=85" alt="Pepohonan di hutan hijau">
+                <div class="news-body">
+                    <div class="news-meta"><span>LINGKUNGAN</span><time datetime="2026-09-20">20 Sep 2026</time></div>
+                    <h3>Menjaga Ekosistem untuk Masa Depan</h3>
+                    <p>Langkah sederhana untuk menjaga kebersihan dan kelestarian lingkungan saat berwisata.</p>
+                    <button class="text-link article-read" data-title="Menjaga Ekosistem untuk Masa Depan" data-category="Lingkungan" data-date="20 September 2026" data-image="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=85" data-content="Menjaga lingkungan dapat dimulai dengan membawa kembali sampah, tidak merusak vegetasi, mengikuti aturan kawasan, dan menghormati satwa liar. Pengembangan pariwisata yang baik perlu menempatkan kelestarian ekosistem sebagai bagian utama dari perencanaan. Artikel ini merupakan konten edukasi demonstrasi.">Baca Selengkapnya →</button>
+                </div>
+            </article>
+
+            <article class="news-card article-card" id="berita-3" data-news-category="budaya">
+                <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=800&q=85" alt="Kegiatan bersama masyarakat">
+                <div class="news-body">
+                    <div class="news-meta"><span>BUDAYA</span><time datetime="2026-09-10">10 Sep 2026</time></div>
+                    <h3>Budaya Lokal sebagai Identitas Wilayah</h3>
+                    <p>Tradisi, kuliner, dan pengetahuan lokal dapat menjadi bagian dari pengalaman wisata yang berkesan.</p>
+                    <button class="text-link article-read" data-title="Budaya Lokal sebagai Identitas Wilayah" data-category="Budaya" data-date="10 September 2026" data-image="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=85" data-content="Budaya lokal perlu diperkenalkan dengan menghormati masyarakat yang memilikinya. Pengalaman wisata budaya sebaiknya melibatkan persetujuan warga, memberikan ruang bagi pelaku budaya, serta menghindari penyederhanaan tradisi menjadi sekadar tontonan. Artikel ini adalah materi pengenalan, bukan laporan kegiatan budaya aktual.">Baca Selengkapnya →</button>
+                </div>
+            </article>
+
+            <article class="news-card article-card" id="berita-4" data-news-category="lokal">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=85" alt="Lanskap lahan pertanian">
+                <div class="news-body">
+                    <div class="news-meta"><span>POTENSI LOKAL</span><time datetime="2026-08-25">25 Agu 2026</time></div>
+                    <h3>Mengenal Potensi Pertanian dan Perkebunan</h3>
+                    <p>Komoditas lokal dapat membuka peluang pengolahan hasil, pemasaran, dan pengembangan usaha masyarakat.</p>
+                    <button class="text-link article-read" data-title="Mengenal Potensi Pertanian dan Perkebunan" data-category="Potensi Lokal" data-date="25 Agustus 2026" data-image="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=85" data-content="Pengembangan komoditas lokal dapat didukung melalui peningkatan kualitas produk, pengolahan pascapanen, pemasaran, dan kerja sama antarpelaku usaha. Komoditas unggulan di tingkat kecamatan perlu diidentifikasi berdasarkan data resmi serta informasi dari masyarakat dan petani. Artikel ini merupakan contoh materi, bukan laporan hasil survei.">Baca Selengkapnya →</button>
+                </div>
+            </article>
+
+            <article class="news-card article-card" id="berita-5" data-news-category="pariwisata">
+                <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=800&q=85" alt="Pemandangan bawah laut">
+                <div class="news-body">
+                    <div class="news-meta"><span>PARIWISATA</span><time datetime="2026-08-12">12 Agu 2026</time></div>
+                    <h3>Mengenal Keindahan Ekosistem Bawah Laut</h3>
+                    <p>Terumbu karang dan biota laut memiliki nilai ekologis yang penting untuk dipahami pengunjung.</p>
+                    <button class="text-link article-read" data-title="Mengenal Keindahan Ekosistem Bawah Laut" data-category="Pariwisata" data-date="12 Agustus 2026" data-image="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=1200&q=85" data-content="Ekosistem bawah laut menjadi habitat bagi banyak organisme. Aktivitas wisata bahari perlu memperhatikan keselamatan, kondisi cuaca, penggunaan peralatan yang sesuai, serta larangan menyentuh atau mengambil biota laut. Lokasi penyelaman harus dikonfirmasi kepada operator setempat. Artikel ini merupakan konten edukasi demonstrasi.">Baca Selengkapnya →</button>
+                </div>
+            </article>
+
+            <article class="news-card article-card" id="berita-6" data-news-category="lingkungan">
+                <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=85" alt="Hutan dengan pepohonan tinggi">
+                <div class="news-body">
+                    <div class="news-meta"><span>LINGKUNGAN</span><time datetime="2026-07-30">30 Jul 2026</time></div>
+                    <h3>Ekowisata dan Pentingnya Edukasi Lingkungan</h3>
+                    <p>Perjalanan edukatif dapat meningkatkan kepedulian terhadap habitat dan sumber daya alam.</p>
+                    <button class="text-link article-read" data-title="Ekowisata dan Pentingnya Edukasi Lingkungan" data-category="Lingkungan" data-date="30 Juli 2026" data-image="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=85" data-content="Ekowisata menggabungkan pengalaman berkunjung dengan pembelajaran mengenai alam. Kegiatannya perlu dirancang sesuai kondisi lokasi, kapasitas pengunjung, serta pengetahuan pengelola setempat. Edukasi yang baik membantu pengunjung memahami bahwa kelestarian alam merupakan tanggung jawab bersama. Artikel ini merupakan materi demonstrasi.">Baca Selengkapnya →</button>
+                </div>
+            </article>
+        </div>
+        <p class="content-note">Seluruh judul, tanggal, dan isi artikel pada halaman ini merupakan konten contoh untuk demonstrasi desain. Bukan berita aktual atau laporan peristiwa yang telah diverifikasi.</p>
+    </section>
+
+    <!-- KATEGORI -->
+    <section class="section-padding">
+        <div class="section-heading centered"><span class="eyebrow">EXPLORE BY TOPIC</span><h2>Kategori Cerita.</h2><p>Pilih topik yang ingin kamu kenali lebih jauh.</p></div>
+        <div class="category-grid">
+            <a href="#berita-terbaru" class="category-card" data-category-link="pariwisata"><span>⌁</span><h3>Pariwisata</h3><p>Inspirasi perjalanan dan destinasi.</p></a>
+            <a href="#berita-terbaru" class="category-card" data-category-link="budaya"><span>✳</span><h3>Budaya</h3><p>Tradisi dan kehidupan masyarakat.</p></a>
+            <a href="#berita-terbaru" class="category-card" data-category-link="lingkungan"><span>♧</span><h3>Lingkungan</h3><p>Konservasi dan ekosistem.</p></a>
+            <a href="#berita-terbaru" class="category-card" data-category-link="lokal"><span>◈</span><h3>Potensi Lokal</h3><p>Pertanian dan ekonomi masyarakat.</p></a>
+        </div>
+    </section>
+</main>
+
+<!-- MODAL ARTIKEL -->
+<dialog class="article-modal" id="article-modal">
+    <button class="modal-close" type="button" aria-label="Tutup artikel">✕</button>
+    <img id="modal-image" src="" alt="">
+    <div class="modal-content">
+        <div class="news-meta"><span id="modal-category"></span><time id="modal-date"></time></div>
+        <h2 id="modal-title"></h2>
+        <p id="modal-text"></p>
+        <p class="content-note">Konten demonstrasi, bukan berita aktual terverifikasi.</p>
+    </div>
+</dialog>
+
+<footer class="footer">
+    <div class="footer-main">
+        <div class="footer-brand"><a href="index.html" class="logo footer-logo"><span class="logo-icon">◈</span><span>Balantak <strong>Utara</strong><small>SULAWESI TENGAH</small></span></a><p>Merayakan keindahan alam, budaya, dan kehidupan pesisir Sulawesi Tengah.</p></div>
+        <div class="footer-links"><h4>Jelajahi</h4><a href="index.html">Beranda</a><a href="paket-wisata.html">Paket Wisata</a><a href="kekayaan-alam.html">Kekayaan Alam</a><a href="berita.html">Berita</a><a href="tentang.html">Tentang</a></div>
+        <div class="footer-links"><h4>Kategori</h4><a href="#berita-terbaru" data-category-link="pariwisata">Pariwisata</a><a href="#berita-terbaru" data-category-link="budaya">Budaya</a><a href="#berita-terbaru" data-category-link="lingkungan">Lingkungan</a><a href="#berita-terbaru" data-category-link="lokal">Potensi Lokal</a></div>
+        <div class="footer-links"><h4>Wilayah</h4><p>Balantak Utara<br>Kabupaten Banggai<br>Sulawesi Tengah</p><a href="tentang.html#lokasi">Lihat lokasi</a></div>
+    </div>
+    <div class="footer-bottom"><p>© <span class="current-year">2026</span> Balantak Utara. Jelajahi keindahan Indonesia.</p><p>ALAM · BUDAYA · PESISIR</p></div>
+</footer>
+</body>
+</html>

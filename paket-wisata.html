@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temukan inspirasi paket wisata Pulau Dua, wisata bahari, budaya, dan ekowisata Balantak Utara.">
+    <title>Paket Wisata — Balantak Utara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="navbar">
+    <a href="index.html" class="logo"><span class="logo-icon">◈</span><span>Balantak <strong>Utara</strong><small>SULAWESI TENGAH</small></span></a>
+    <button class="menu-toggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+    <nav class="nav-menu">
+        <a href="index.html">Beranda</a><a href="paket-wisata.html" class="active">Paket Wisata</a><a href="kekayaan-alam.html">Kekayaan Alam</a><a href="berita.html">Berita</a><a href="tentang.html">Tentang</a>
+    </nav>
+    <div class="nav-actions"><button class="search-toggle" aria-label="Buka pencarian">⌕</button><a href="#daftar-paket" class="btn btn-primary nav-booking">Booking</a></div>
+    <form class="search-form" role="search"><input type="search" placeholder="Cari destinasi, berita, atau paket..." aria-label="Kata kunci pencarian"><button type="submit">Cari</button></form>
+</header>
+
+<main>
+    <section class="hero sub-hero package-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="eyebrow light">PAKET WISATA · YOUR NEXT ADVENTURE</span>
+            <h1>Temukan Pengalaman Terbaik<span>.</span></h1>
+            <p>Rencanakan perjalanan untuk menikmati panorama pesisir, menjelajahi alam, dan mengenal kehidupan masyarakat Balantak Utara.</p>
+            <a href="#daftar-paket" class="btn btn-primary">Temukan Paket <span>↓</span></a>
+        </div>
+        <span class="hero-caption">MAKE EVERY JOURNEY MEANINGFUL</span>
+    </section>
+
+    <!-- FILTER KATEGORI -->
+    <section class="section-padding package-intro">
+        <div class="section-heading centered">
+            <span class="eyebrow">CURATED EXPERIENCES</span>
+            <h2>Pilih Petualanganmu.</h2>
+            <p>Temukan pengalaman yang sesuai dengan minat dan gaya perjalananmu.</p>
+        </div>
+
+        <div class="filter-buttons" aria-label="Filter kategori paket wisata">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">Semua</button>
+            <button class="filter-btn" data-filter="pantai" aria-pressed="false">Pantai & Pulau</button>
+            <button class="filter-btn" data-filter="bahari" aria-pressed="false">Snorkeling & Diving</button>
+            <button class="filter-btn" data-filter="budaya" aria-pressed="false">Budaya</button>
+            <button class="filter-btn" data-filter="edukasi" aria-pressed="false">Edukasi</button>
+        </div>
+
+        <div class="package-grid" id="daftar-paket">
+            <article class="package-card filterable-card" id="pulau-dua" data-category="pantai">
+                <a class="package-image" href="#pulau-dua">
+                    <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1000&q=85" alt="Pemandangan pulau tropis">
+                    <span class="package-tag">PANTAI & PULAU</span>
+                </a>
+                <div class="package-body">
+                    <div class="package-meta"><span>◷ 1 hari</span><span>♧ 2–8 peserta</span></div>
+                    <h3>Eksplorasi Pulau Dua</h3>
+                    <p>Inspirasi perjalanan untuk menikmati panorama pulau, mengabadikan pemandangan, dan mengenal karakter lingkungan pesisir.</p>
+                    <div class="package-bottom">
+                        <div class="price"><small>Harga contoh</small><strong>Rp350.000</strong><small>/ orang</small></div>
+                        <button class="btn btn-small btn-primary booking-btn" data-package="Eksplorasi Pulau Dua" data-price="Rp350.000" data-category="pantai">Pesan Sekarang ↗</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="package-card filterable-card" id="snorkeling" data-category="bahari">
+                <a class="package-image" href="#snorkeling">
+                    <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=1000&q=85" alt="Terumbu karang di laut tropis">
+                    <span class="package-tag">SNORKELING & DIVING</span>
+                </a>
+                <div class="package-body">
+                    <div class="package-meta"><span>◷ 1 hari</span><span>♧ 2–6 peserta</span></div>
+                    <h3>Snorkeling & Diving Laut Balantak</h3>
+                    <p>Pengalaman bahari untuk mengenal kehidupan bawah laut bersama operator dan pemandu yang kompeten.</p>
+                    <div class="package-bottom">
+                        <div class="price"><small>Harga contoh</small><strong>Rp450.000</strong><small>/ orang</small></div>
+                        <button class="btn btn-small btn-primary booking-btn" data-package="Snorkeling & Diving Laut Balantak" data-price="Rp450.000" data-category="bahari">Pesan Sekarang ↗</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="package-card filterable-card" id="budaya" data-category="budaya">
+                <a class="package-image" href="#budaya">
+                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1000&q=85" alt="Kegiatan bersama masyarakat">
+                    <span class="package-tag">BUDAYA</span>
+                </a>
+                <div class="package-body">
+                    <div class="package-meta"><span>◷ Setengah hari</span><span>♧ 2–10 peserta</span></div>
+                    <h3>Wisata Budaya & Kampung Pesisir</h3>
+                    <p>Kenali kehidupan masyarakat, kuliner, kerajinan, dan pengetahuan lokal melalui kegiatan yang disepakati bersama warga.</p>
+                    <div class="package-bottom">
+                        <div class="price"><small>Harga contoh</small><strong>Rp200.000</strong><small>/ orang</small></div>
+                        <button class="btn btn-small btn-primary booking-btn" data-package="Wisata Budaya & Kampung Pesisir" data-price="Rp200.000" data-category="budaya">Pesan Sekarang ↗</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="package-card filterable-card" id="mangrove" data-category="edukasi">
+                <a class="package-image" href="#mangrove">
+                    <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1000&q=85" alt="Kawasan hutan hijau">
+                    <span class="package-tag">EDUKASI & EKOWISATA</span>
+                </a>
+                <div class="package-body">
+                    <div class="package-meta"><span>◷ 3–4 jam</span><span>♧ 2–10 peserta</span></div>
+                    <h3>Susur Mangrove & Ekowisata</h3>
+                    <p>Pelajari peran vegetasi pesisir, fungsi mangrove, dan pentingnya menjaga ekosistem melalui aktivitas edukatif.</p>
+                    <div class="package-bottom">
+                        <div class="price"><small>Harga contoh</small><strong>Rp175.000</strong><small>/ orang</small></div>
+                        <button class="btn btn-small btn-primary booking-btn" data-package="Susur Mangrove & Ekowisata" data-price="Rp175.000" data-category="edukasi">Pesan Sekarang ↗</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="content-note">Harga, durasi, dan jumlah peserta adalah simulasi untuk desain website, bukan penawaran resmi. Nama destinasi dan ketersediaan aktivitas perlu dikonfirmasi dengan pengelola setempat.</p>
+    </section>
+
+    <!-- AKTIVITAS -->
+    <section class="section-padding section-cream">
+        <div class="section-heading centered">
+            <span class="eyebrow">THE EXPERIENCE</span>
+            <h2>Aktivitas yang Menginspirasi.</h2>
+            <p>Berbagai ide kegiatan untuk menikmati perjalanan dengan cara yang lebih bermakna.</p>
+        </div>
+        <div class="activity-grid">
+            <article class="activity-card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=85" alt="Menikmati panorama pantai"><div><span>01</span><h3>Menjelajahi Pantai</h3></div></article>
+            <article class="activity-card"><img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=800&q=85" alt="Snorkeling dan kehidupan laut"><div><span>02</span><h3>Snorkeling</h3></div></article>
+            <article class="activity-card"><img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=800&q=85" alt="Mengenal budaya masyarakat"><div><span>03</span><h3>Mengenal Budaya Lokal</h3></div></article>
+            <article class="activity-card"><img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=85" alt="Hutan untuk aktivitas edukasi lingkungan"><div><span>04</span><h3>Ekowisata Mangrove</h3></div></article>
+        </div>
+        <p class="content-note">Foto aktivitas merupakan ilustrasi. Pastikan kegiatan benar-benar tersedia di destinasi yang akan dikunjungi.</p>
+    </section>
+
+    <!-- PAKET CUSTOM -->
+    <section class="custom-banner" id="custom">
+        <div class="custom-overlay"></div>
+        <div class="custom-content">
+            <span class="eyebrow light">YOUR TRIP, YOUR WAY</span>
+            <h2>Paket Wisata Sesuai Keinginanmu.</h2>
+            <p>Ingin perjalanan yang berbeda? Susun rencana sesuai minat, waktu, jumlah peserta, dan anggaran bersama pengelola lokal.</p>
+            <button class="btn btn-light" data-open-booking data-package="Paket Wisata Custom">Hubungi Kami <span>→</span></button>
+        </div>
+    </section>
+
+    <!-- INFORMASI PEMESANAN -->
+    <section class="section-padding">
+        <div class="section-heading centered">
+            <span class="eyebrow">HOW TO BOOK</span>
+            <h2>Langkah Pemesanan.</h2>
+            <p>Proses sederhana untuk membantu merencanakan perjalananmu.</p>
+        </div>
+        <div class="steps-grid">
+            <article class="step-card"><span class="step-number">01</span><h3>Pilih Paket</h3><p>Tentukan jenis wisata, jumlah peserta, dan aktivitas yang diinginkan.</p></article>
+            <article class="step-card"><span class="step-number">02</span><h3>Hubungi Pengelola</h3><p>Sampaikan tanggal perjalanan, kebutuhan, dan pertanyaan tentang fasilitas.</p></article>
+            <article class="step-card"><span class="step-number">03</span><h3>Konfirmasi Perjalanan</h3><p>Pastikan jadwal, harga, akses, keselamatan, serta ketentuan pembatalan sebelum membayar.</p></article>
+        </div>
+        <div class="notice-box"><strong>Informasi pemesanan</strong><p>Website ini belum terhubung dengan operator wisata atau sistem pembayaran. Formulir di bawah digunakan untuk menyusun permintaan awal, bukan konfirmasi reservasi.</p></div>
+    </section>
+
+    <!-- FORM BOOKING -->
+    <section class="section-padding section-cream" id="form-booking">
+        <div class="section-heading centered">
+            <span class="eyebrow">PLAN YOUR TRIP</span>
+            <h2>Rencanakan Perjalanan.</h2>
+            <p>Isi informasi awal agar permintaan perjalananmu dapat disiapkan.</p>
+        </div>
+        <form class="booking-form" id="booking-form">
+            <div class="form-grid">
+                <label>Nama lengkap<input type="text" name="nama" required placeholder="Nama kamu"></label>
+                <label>Nomor WhatsApp<input type="tel" name="telepon" required placeholder="08xxxxxxxxxx"></label>
+                <label>Pilih paket
+                    <select name="paket" id="booking-package" required>
+                        <option value="">Pilih paket wisata</option>
+                        <option>Eksplorasi Pulau Dua</option>
+                        <option>Snorkeling & Diving Laut Balantak</option>
+                        <option>Wisata Budaya & Kampung Pesisir</option>
+                        <option>Susur Mangrove & Ekowisata</option>
+                        <option>Paket Wisata Custom</option>
+                    </select>
+                </label>
+                <label>Tanggal rencana<input type="date" name="tanggal" required></label>
+                <label>Jumlah peserta<input type="number" name="peserta" min="1" max="100" value="2" required></label>
+                <label>Catatan<textarea name="catatan" rows="3" placeholder="Aktivitas atau kebutuhan khusus"></textarea></label>
+            </div>
+            <button type="submit" class="btn btn-primary">Siapkan Permintaan ↗</button>
+            <p class="form-note">Pengiriman membutuhkan nomor WhatsApp pengelola yang valid. Formulir tidak menyimpan atau mengirim data secara otomatis.</p>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-main">
+        <div class="footer-brand"><a href="index.html" class="logo footer-logo"><span class="logo-icon">◈</span><span>Balantak <strong>Utara</strong><small>SULAWESI TENGAH</small></span></a><p>Merayakan keindahan alam, budaya, dan kehidupan pesisir Sulawesi Tengah.</p></div>
+        <div class="footer-links"><h4>Jelajahi</h4><a href="index.html">Beranda</a><a href="paket-wisata.html">Paket Wisata</a><a href="kekayaan-alam.html">Kekayaan Alam</a><a href="berita.html">Berita</a><a href="tentang.html">Tentang</a></div>
+        <div class="footer-links"><h4>Informasi</h4><p>Balantak Utara<br>Kabupaten Banggai<br>Sulawesi Tengah, Indonesia</p><a href="https://www.google.com/maps/search/?api=1&query=Balantak+Utara+Banggai+Sulawesi+Tengah" target="_blank" rel="noopener noreferrer">Lihat lokasi ↗</a></div>
+        <div class="footer-links"><h4>Perjalanan</h4><a href="#daftar-paket">Daftar paket</a><a href="#custom">Paket custom</a><a href="#form-booking">Formulir permintaan</a></div>
+    </div>
+    <div class="footer-bottom"><p>© <span class="current-year">2026</span> Balantak Utara. Jelajahi keindahan Indonesia.</p><p>ALAM · BUDAYA · PESISIR</p></div>
+</footer>
+</body>
+</html>

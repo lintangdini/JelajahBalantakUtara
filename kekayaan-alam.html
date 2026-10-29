@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mengenal flora, fauna, hasil laut, pertanian, dan ekosistem Balantak Utara.">
+    <title>Kekayaan Alam — Balantak Utara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="navbar">
+    <a href="index.html" class="logo"><span class="logo-icon">◈</span><span>Balantak <strong>Utara</strong><small>SULAWESI TENGAH</small></span></a>
+    <button class="menu-toggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+    <nav class="nav-menu"><a href="index.html">Beranda</a><a href="paket-wisata.html">Paket Wisata</a><a href="kekayaan-alam.html" class="active">Kekayaan Alam</a><a href="berita.html">Berita</a><a href="tentang.html">Tentang</a></nav>
+    <div class="nav-actions"><button class="search-toggle" aria-label="Buka pencarian">⌕</button><a href="paket-wisata.html#daftar-paket" class="btn btn-primary nav-booking">Booking</a></div>
+    <form class="search-form" role="search"><input type="search" placeholder="Cari destinasi, berita, atau paket..." aria-label="Kata kunci pencarian"><button type="submit">Cari</button></form>
+</header>
+
+<main>
+    <section class="hero sub-hero nature-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="eyebrow light">KEKAYAAN ALAM · BIODIVERSITAS</span>
+            <h1>Kekayaan Alam<br>Balantak Utara<span>.</span></h1>
+            <p>Dari vegetasi darat hingga ekosistem laut, alam menyimpan sumber kehidupan yang perlu dikenal dan dijaga bersama.</p>
+            <a href="#flora" class="btn btn-primary">Jelajahi Kekayaan Alam <span>↓</span></a>
+        </div>
+        <span class="hero-caption">PROTECT WHAT MAKES US BEAUTIFUL</span>
+    </section>
+
+    <!-- NAVIGASI KATEGORI -->
+    <section class="section-padding nature-intro">
+        <div class="section-heading centered">
+            <span class="eyebrow">A LIVING LANDSCAPE</span>
+            <h2>Alam yang Menghidupi.</h2>
+            <p>Mengenal potensi sumber daya alam merupakan langkah awal untuk memahami hubungan antara lingkungan dan kehidupan masyarakat.</p>
+        </div>
+        <div class="category-nav">
+            <a href="#flora">Flora & Fauna <span>↘</span></a>
+            <a href="#komoditas">Komoditas <span>↘</span></a>
+            <a href="#kelautan">Kelautan <span>↘</span></a>
+            <a href="#ekosistem">Ekosistem <span>↘</span></a>
+        </div>
+    </section>
+
+    <!-- FLORA -->
+    <section class="section-padding section-cream" id="flora">
+        <div class="section-heading">
+            <div><span class="eyebrow">FLORA & PLANTS</span><h2>Flora dan Tanaman Unggulan.</h2><p>Vegetasi dan tanaman perkebunan memiliki peran ekologis serta nilai ekonomi.</p></div>
+        </div>
+        <div class="nature-grid">
+            <article class="nature-card"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=85" alt="Pepohonan di kawasan hijau"><div class="nature-card-body"><span class="nature-label">VEGETASI PESISIR</span><h3>Mangrove</h3><p>Mangrove membantu mengurangi abrasi, menyimpan karbon, dan menyediakan habitat bagi berbagai organisme pesisir.</p></div></article>
+            <article class="nature-card" id="komoditas"><img src="https://images.unsplash.com/photo-1603905179139-0d3d4c2d7c16?auto=format&fit=crop&w=800&q=85" alt="Tanaman perkebunan tropis"><div class="nature-card-body"><span class="nature-label">PERKEBUNAN</span><h3>Cengkeh</h3><p>Cengkeh merupakan komoditas rempah yang dikenal luas dan memiliki nilai ekonomi bagi petani di berbagai wilayah Indonesia.</p></div></article>
+            <article class="nature-card"><img src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=800&q=85" alt="Buah kakao pada tanaman"><div class="nature-card-body"><span class="nature-label">KOMODITAS PERTANIAN</span><h3>Kakao</h3><p>Kakao menjadi bahan baku produk cokelat dan sumber penghasilan bagi masyarakat di sejumlah daerah tropis.</p></div></article>
+            <article class="nature-card"><img src="https://images.unsplash.com/photo-1615485500704-8e990f9900f8?auto=format&fit=crop&w=800&q=85" alt="Berbagai rempah alami"><div class="nature-card-body"><span class="nature-label">REMPAH NUSANTARA</span><h3>Pala</h3><p>Pala merupakan tanaman rempah tropis yang dimanfaatkan dalam industri pangan dan pengolahan hasil pertanian.</p></div></article>
+        </div>
+    </section>
+
+    <!-- SATWA -->
+    <section class="section-padding" id="ekosistem">
+        <div class="section-heading"><div><span class="eyebrow">WILDLIFE & ECOSYSTEMS</span><h2>Satwa dan Keanekaragaman Laut.</h2><p>Satwa memiliki peran penting dalam rantai makanan dan keseimbangan lingkungan.</p></div></div>
+        <div class="wildlife-grid">
+            <article class="wildlife-card"><img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=700&q=85" alt="Burung di habitat alami"><div class="wildlife-info"><span>ENDEMIK SULAWESI</span><h3>Maleo</h3><p>Maleo adalah burung endemik Sulawesi yang memanfaatkan panas alami lingkungan untuk membantu pengeraman telurnya.</p></div></article>
+            <article class="wildlife-card"><img src="https://images.unsplash.com/photo-1607153333879-c174d265f1d2?auto=format&fit=crop&w=700&q=85" alt="Lumba-lumba di lautan"><div class="wildlife-info"><span>MAMALIA LAUT</span><h3>Lumba-lumba</h3><p>Mamalia laut yang memiliki kemampuan komunikasi dan navigasi menggunakan suara serta berperan dalam jejaring makanan laut.</p></div></article>
+            <article class="wildlife-card"><img src="https://images.unsplash.com/photo-1568430462989-44163eb1752f?auto=format&fit=crop&w=700&q=85" alt="Satwa laut berukuran besar"><div class="wildlife-info"><span>MEGAFAUNA LAUT</span><h3>Paus Manta</h3><p>Pari manta merupakan ikan bertulang rawan yang memakan organisme kecil di air dan berperan dalam ekosistem laut.</p></div></article>
+            <article class="wildlife-card"><img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=700&q=85" alt="Terumbu karang di bawah laut"><div class="wildlife-info"><span>EKOSISTEM BAWAH LAUT</span><h3>Terumbu Karang</h3><p>Terumbu karang menjadi habitat, tempat mencari makan, dan tempat berlindung bagi berbagai biota laut.</p></div></article>
+        </div>
+    </section>
+
+    <!-- HASIL LAUT DAN PERTANIAN -->
+    <section class="section-padding section-cream" id="kelautan">
+        <div class="section-heading"><div><span class="eyebrow">LOCAL RESOURCES</span><h2>Hasil Laut dan Pertanian.</h2><p>Potensi ekonomi yang dapat menopang kebutuhan masyarakat dan usaha lokal.</p></div></div>
+        <div class="resource-grid resource-grid-four">
+            <article class="resource-card"><img src="https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=800&q=85" alt="Hasil tangkapan ikan"><div class="resource-info"><span>01 / PERIKANAN</span><h3>Ikan Laut</h3><p>Sumber protein dan komoditas yang mendukung usaha perikanan serta rantai pasok pangan.</p></div></article>
+            <article class="resource-card"><img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=85" alt="Udang hasil perikanan"><div class="resource-info"><span>02 / HASIL LAUT</span><h3>Udang</h3><p>Komoditas perikanan bernilai ekonomi yang memerlukan penanganan hasil panen dan rantai dingin yang baik.</p></div></article>
+            <article class="resource-card"><img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?auto=format&fit=crop&w=800&q=85" alt="Kelapa dan hasil pertanian"><div class="resource-info"><span>03 / PERKEBUNAN</span><h3>Kelapa & Kopra</h3><p>Kelapa dapat dimanfaatkan untuk pangan, minyak, dan kopra sebagai bahan baku berbagai produk.</p></div></article>
+            <article class="resource-card"><img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=800&q=85" alt="Ternak di padang rumput"><div class="resource-info"><span>04 / PETERNAKAN</span><h3>Sapi & Kambing</h3><p>Peternakan dapat mendukung pemenuhan kebutuhan pangan dan ekonomi rumah tangga jika dikelola secara berkelanjutan.</p></div></article>
+        </div>
+        <p class="content-note">Gambar bersifat ilustratif. Daftar ini tidak menyatakan bahwa setiap komoditas telah terverifikasi sebagai produk unggulan Kecamatan Balantak Utara.</p>
+    </section>
+
+    <!-- PELESTARIAN -->
+    <section class="conservation-banner">
+        <div class="conservation-image"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1100&q=85" alt="Pepohonan hijau yang rimbun"></div>
+        <div class="conservation-text"><span class="eyebrow">SUSTAINABLE FUTURE</span><h2>Jaga Alam, Jaga Masa Depan.</h2><p>Kelestarian alam membutuhkan partisipasi bersama. Menjaga kebersihan, melindungi habitat, menghormati satwa liar, dan memanfaatkan sumber daya secara bertanggung jawab merupakan langkah penting untuk generasi mendatang.</p><a href="berita.html" class="text-link">Baca Artikel Lingkungan →</a></div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-main">
+        <div class="footer-brand"><a href="index.html" class="logo footer-logo"><span class="logo-icon">◈</span><span>Balantak <strong>Utara</strong><small>SULAWESI TENGAH</small></span></a><p>Merayakan keindahan alam, budaya, dan kehidupan pesisir Sulawesi Tengah.</p></div>
+        <div class="footer-links"><h4>Jelajahi</h4><a href="index.html">Beranda</a><a href="paket-wisata.html">Paket Wisata</a><a href="kekayaan-alam.html">Kekayaan Alam</a><a href="berita.html">Berita</a><a href="tentang.html">Tentang</a></div>
+        <div class="footer-links"><h4>Informasi</h4><p>Balantak Utara<br>Kabupaten Banggai<br>Sulawesi Tengah, Indonesia</p><a href="tentang.html#lokasi">Lokasi wilayah</a></div>
+        <div class="footer-links"><h4>Pelestarian</h4><a href="#flora">Flora dan fauna</a><a href="#kelautan">Sumber daya lokal</a><a href="#ekosistem">Ekosistem</a></div>
+    </div>
+    <div class="footer-bottom"><p>© <span class="current-year">2026</span> Balantak Utara. Jelajahi keindahan Indonesia.</p><p>ALAM · BUDAYA · PESISIR</p></div>
+</footer>
+</body>
+</html>
